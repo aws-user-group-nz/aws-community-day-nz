@@ -1,0 +1,2960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs ================================================== -->
+    <meta charset="utf-8" />
+
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+
+    <!-- Site Title -->
+    <title>AWS Community Day Singapore 2023</title>
+    <meta
+      name="description"
+      content="Community-led conference for AWS users. Learn from hands-on practitioners like yourself."
+    />
+    <meta property="og:image" content="images/aws_cd_singapore.jpg" />
+    <link rel="icon" type="image/png" href="images/favico.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZCGRDNV5VM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZCGRDNV5VM");
+    </script>
+
+    <!-- CSS
+   ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Animation -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- magnific -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- isotop -->
+    <link rel="stylesheet" href="css/isotop.css" />
+    <!-- ico fonts -->
+    <link rel="stylesheet" href="css/xsIcon.css" />
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+    
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 4rem 0;
+        font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+
+      .scheduleContainer {
+        display: grid;
+        grid-gap: 0.2rem;
+        grid-template-columns: 5rem repeat(4, 1fr);
+        grid-template-rows: repeat(28, 1fr);
+        grid-template-areas: "time800 stage stage stage stage" "time830 stage stage stage stage" "time900 stage stage stage stage" "time930 stage stage stage stage" "time955 stage stage stage stage" "time1000 stage stage stage stage" "time1015 stage stage stage stage" "time1025 stage stage stage stage" "time1029 stage stage stage stage" "time1030 stage stage stage stage" "time1100 stage stage stage stage" "time1110 stage stage stage stage" "time1120 stage stage stage stage" "time1130 stage stage stage stage"  "time1149 stage stage stage stage" "time1150 stage stage stage stage" "time1200 stage stage stage stage" "time1230 stage stage stage stage" "time1259 stage stage stage stage" "time1300 stage stage stage stage" "time1330 stage stage stage stage" "time1340 stage stage stage stage" "time1400 stage stage stage stage" "time1410 stage stage stage stage" "time1420 stage stage stage stage" "time1430 stage stage stage stage" "time1445 stage stage stage stage" "time1450 stage stage stage stage" "time1500 stage stage stage stage" "time1530 stage stage stage stage" "time1540 stage stage stage stage" "time1600 stage stage stage stage" "time1610 stage stage stage stage" "time1620 stage stage stage stage" "time1630 stage stage stage stage" "time1700 stage stage stage stage" "time1710 stage stage stage stage";
+      }
+
+      /**
+       * Time
+       */
+      .time {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-top: thin dotted #ccc;
+        height: 100%;
+        padding: 0 0.5rem;
+      }
+      .time.start-900 {
+        grid-area: time900;
+      }
+      .time.start-930 {
+        grid-area: time930;
+      }
+      .time.start-955 {
+        grid-area: time955;
+      }
+      .time.start-1000 {
+        grid-area: time1000;
+      }
+      .time.start-1015 {
+        grid-area: time1015;
+      }
+      .time.start-1025 {
+        grid-area: time1025;
+      }
+      .time.start-1029 {
+        grid-area: time1029;
+      }
+      .time.start-1030 {
+        grid-area: time1030;
+      }
+      .time.start-1100 {
+        grid-area: time1100;
+      }
+      .time.start-1110 {
+        grid-area: time1110;
+      }
+      .time.start-1120 {
+        grid-area: time1120;
+      }
+      .time.start-1130 {
+        grid-area: time1130;
+      }
+      .time.start-1150 {
+        grid-area: time1150;
+      }
+      .time.start-1200 {
+        grid-area: time1200;
+      }
+      .time.start-1230 {
+        grid-area: time1230;
+      }
+      .time.start-1300 {
+        grid-area: time1300;
+      }
+      .time.start-1330 {
+        grid-area: time1330;
+      }
+      .time.start-1340 {
+        grid-area: time1340;
+      }
+      .time.start-1400 {
+        grid-area: time1400;
+      }
+      .time.start-1410 {
+        grid-area: time1410;
+      }
+      .time.start-1420 {
+        grid-area: time1420;
+      }
+      .time.start-1430 {
+        grid-area: time1430;
+      }
+      .time.start-1445 {
+        grid-area: time1445;
+      }
+      .time.start-1450 {
+        grid-area: time1450;
+      }
+      .time.start-1500 {
+        grid-area: time1500;
+      }
+      .time.start-1530 {
+        grid-area: time1530;
+      }
+      .time.start-1540 {
+        grid-area: time1540;
+      }
+      .time.start-1600 {
+        grid-area: time1600;
+      }
+      .time.start-1610 {
+        grid-area: time1610;
+      }
+      .time.start-1620 {
+        grid-area: time1620;
+      }
+      .time.start-1630 {
+        grid-area: time1630;
+      }
+      .time.start-1700 {
+        grid-area: time1700;
+      }
+      .time.start-1710 {
+        grid-area: time1710;
+      }
+      .time[class*="30"]:not(.start-1300) {
+        font-size: 0.8rem;
+        color: #ccc;
+      }
+
+      /**
+       * Event
+       */
+      .event {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        background-color: orange;
+        border-radius: 0.2rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.4;
+      }
+      .event span {
+        display: block;
+        width: 100%;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+   
+      .event.start-900 {
+        grid-row-start: time900;
+      }
+      .event.start-930 {
+        grid-row-start: time930;
+      }
+      .event.start-955 {
+        grid-row-start: time955;
+      }
+      .event.start-1000 {
+        grid-row-start: time1000;
+      }
+      .event.start-1015 {
+        grid-row-start: time1015;
+      }
+      .event.start-1025 {
+        grid-row-start: time1025;
+      }
+      .event.start-1029 {
+        grid-row-start: time1029;
+      }
+      .event.start-1030 {
+        grid-row-start: time1030;
+      }
+      .event.start-1100 {
+        grid-row-start: time1100;
+      }
+      .event.start-1110 {
+        grid-row-start: time1110;
+      }
+      .event.start-1120 {
+        grid-row-start: time1120;
+      }
+      .event.start-1130 {
+        grid-row-start: time1130;
+      }
+      .event.start-1150 {
+        grid-row-start: time1150;
+      }
+      .event.start-1200 {
+        grid-row-start: time1200;
+      }
+      .event.start-1230 {
+        grid-row-start: time1230;
+      }
+      .event.start-1300 {
+        grid-row-start: time1300;
+      }
+      .event.start-1330 {
+        grid-row-start: time1330;
+      }
+      .event.start-1340 {
+        grid-row-start: time1340;
+      }
+      .event.start-1400 {
+        grid-row-start: time1400;
+      }
+      .event.start-1410 {
+        grid-row-start: time1410;
+      }
+      .event.start-1420 {
+        grid-row-start: time1420;
+      }
+      .event.start-1430 {
+        grid-row-start: time1430;
+      }
+      .event.start-1445 {
+        grid-row-start: time1445;
+      }
+      .event.start-1450 {
+        grid-row-start: time1450;
+      }
+      .event.start-1500 {
+        grid-row-start: time1500;
+      }
+      .event.start-1530 {
+        grid-row-start: time1530;
+      }
+      .event.start-1540 {
+        grid-row-start: time1540;
+      }
+      .event.start-1600 {
+        grid-row-start: time1600;
+      }
+      .event.start-1610 {
+        grid-row-start: time1610;
+      }
+      .event.start-1620 {
+        grid-row-start: time1620;
+      }
+      .event.start-1630 {
+        grid-row-start: time1630;
+      }
+      .event.start-1700 {
+        grid-row-start: time1700;
+      }
+      .event.start-1710 {
+        grid-row-start: time1710;
+      }
+      .event.end-800 {
+        grid-row-end: time800;
+      }
+      .event.end-830 {
+        grid-row-end: time830;
+      }
+      .event.end-900 {
+        grid-row-end: time900;
+      }
+      .event.end-930 {
+        grid-row-end: time930;
+      }
+      .event.end-955 {
+        grid-row-end: time955;
+      }
+      .event.end-1000 {
+        grid-row-end: time1000;
+      }
+      .event.end-1015 {
+        grid-row-end: time1015;
+      }
+      .event.end-1025 {
+        grid-row-end: time1025;
+      }
+      .event.end-1029 {
+        grid-row-end: time1029;
+      }
+      .event.end-1030 {
+        grid-row-end: time1030;
+      }
+      .event.end-1100 {
+        grid-row-end: time1100;
+      }
+      .event.end-1110 {
+        grid-row-end: time1110;
+      }
+      .event.end-1120 {
+        grid-row-end: time1120;
+      }
+      .event.end-1130 {
+        grid-row-end: time1130;
+      }
+      .event.end-1149 {
+        grid-row-end: time1149;
+      }
+      .event.end-1150 {
+        grid-row-end: time1150;
+      }
+      .event.end-1200 {
+        grid-row-end: time1200;
+      }
+      .event.end-1230 {
+        grid-row-end: time1230;
+      }
+      .event.end-1259 {
+        grid-row-end: time1259;
+      }
+      .event.end-1300 {
+        grid-row-end: time1300;
+      }
+      .event.end-1330 {
+        grid-row-end: time1330;
+      }
+      .event.end-1400 {
+        grid-row-end: time1400;
+      }
+      .event.end-1410 {
+        grid-row-end: time1410;
+      }
+      .event.end-1420 {
+        grid-row-end: time1420;
+      }
+      .event.end-1430 {
+        grid-row-end: time1430;
+      }
+      .event.end-1450 {
+        grid-row-end: time1450;
+      }
+      .event.end-1500 {
+        grid-row-end: time1500;
+      }
+      .event.end-1530 {
+        grid-row-end: time1530;
+      }
+      .event.end-1540 {
+        grid-row-end: time1540;
+      }
+      .event.end-1600 {
+        grid-row-end: time1600;
+      }
+      .event.end-1610 {
+        grid-row-end: time1610;
+      }
+      .event.end-1611 {
+        grid-row-end: time1620;
+      }
+      .event.end-1630 {
+        grid-row-end: time1630;
+      }
+      .event.end-1645 {
+        grid-row-end: time1645;
+      }
+      .event.end-1700 {
+        grid-row-end: time1700;
+      }
+      .event.end-1710 {
+        grid-row-end: time1710;
+      }
+      .event.length-1 {
+        grid-column-end: span 1;
+      }
+      .event.length-2 {
+        grid-column-end: span 2;
+      }
+      .event.length-3 {
+        grid-column-end: span 3;
+      }
+      .event.length-4 {
+        grid-column-end: span 4;
+      }
+      .event.stage-earth {
+        background-color: #ffa726;
+      }
+      .event.stage-mercury {
+        background-color: #9ccc65;
+      }
+      .event.stage-venus {
+        background-color: #ff8a65;
+      }
+      .event.stage-mars {
+        background-color: #3beb53;
+      }
+      .event.stage-jupiter {
+        background-color: #81d4fa;
+      }
+      .event.stage-saturn {
+        background-color: #26c6da;
+      }
+      .event.stage-lunch {
+        background-color: #e862d4;
+      }
+      .event.stage-bk{
+        background-color: #232F3E;
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .image-border {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body class="body-color">
+    <div class="body-inner">
+      <!-- Header start -->
+      <header id="header" class="header header-transparent">
+        <div class="container">
+          <nav id="navbarnav" class="navbar navbar-expand-lg navbar-light">
+            <!-- logo-->
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/aws_cd_sg.png"
+                alt="AWS Community Day Singapore"
+                width="70%"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="icon icon-menu"></i
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item nav-link active">
+                  <a class="ts-scroll" href="#home">Home</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a class="ts-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a class="ts-scroll" href="#ts-speakers">Speakers</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a class="ts-scroll" href="#schedules">Schedules</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a class="ts-scroll" href="#sponsors">Organizers</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a
+                    class="btn"
+                    style="line-height: 48px; margin-top: 11px"
+                    href="https://konfhub.com/checkout/aws-community-day-sg?ticketId=6633"
+                    target="_blank"
+                    >REGISTER</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- container end-->
+      </header>
+      <!--/ Header end -->
+
+      <!-- banner start-->
+      <section class="hero-area content-left" id="home">
+        <div
+          class="banner-item wow animate__animated animate__fadeInUp"
+          style="
+            background-image: url(images/AWS_Banner.jpg);
+            background-size: 100%;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="banner-content-wrap">
+                  <div
+                    class="countdown animate__animated animate__zoomIn"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="800ms"
+                  >
+                    <div
+                      class="counter-item wow animate__animated animate__fadeInDown"
+                    >
+                      <i class="icon icon-ring-1Asset-1"></i>
+                      <span class="days">10</span>
+                      <div class="smalltext">Days</div>
+                    </div>
+                    <div
+                      class="counter-item wow animate__animated animate__fadeInUp"
+                    >
+                      <i class="icon icon-ring-4Asset-3"></i>
+                      <span class="hours">2</span>
+                      <div class="smalltext">Hours</div>
+                    </div>
+                    <div
+                      class="counter-item wow animate__animated animate__fadeInDown"
+                    >
+                      <i class="icon icon-ring-3Asset-2"></i>
+                      <span class="minutes">00</span>
+                      <div class="smalltext">Minutes</div>
+                    </div>
+                    <div
+                      class="counter-item wow animate__animated animate__fadeInUp"
+                    >
+                      <i class="icon icon-ring-4Asset-3"></i>
+                      <span class="seconds">00</span>
+                      <div class="smalltext">Seconds</div>
+                    </div>
+                  </div>
+                  <!-- Countdown end -->
+                  <h1
+                    class="banner-title animate__animated animate__fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="700ms"
+                    style="font-size: 40px"
+                  >
+                    AWS Community Day 2023<br />Singapore
+                  </h1>
+                  <p
+                    class="banner-info animate__animated animate__fadeInRight"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="500ms"
+                  >
+                    <span style="font-size: 20px"
+                      >Community-led conference for AWS users. Learn from
+                      hands-on practitioners like yourself.</span
+                    >
+                    <br />
+                    <br />
+                    When : Saturday, 28th January 2023 09:00 AM - 17:30 PM <br>
+                    <br>
+                    Location : NTUC Event Spaces @ NTUC Centre 1, One Marina Blvd, Level 7, S(018989) 
+                  </p>
+                  <div class="banner-btn animate__animated animate__fadeInLeft">
+                    <a
+                      class="btn"
+                      href="https://konfhub.com/checkout/aws-community-day-sg?ticketId=6633"
+                      target="_blank"
+                      >REGISTER NOW</a
+                    >
+                  </div>
+                </div>
+                <!-- Banner content wrap end -->
+              </div>
+              <!-- col end-->
+            </div>
+            <!-- row end-->
+          </div>
+          <!-- Container end -->
+        </div>
+      </section>
+      <!-- banner end-->
+
+      <!-- ts intro start -->
+      <section id="about" class="ts-intro event-intro">
+        <div class="container">
+          <div class="row wow animate__animated animate__fadeInLeft animated">
+            <div class="col-lg-12 mx-auto">
+              <h2
+                class="section-title white"
+                class="text-center"
+                style="margin-bottom: 0"
+              >
+                <span>Welcome to the</span>
+                AWS Community Day Singapore !
+              </h2>
+              <div class="single-intro-text text-center">
+                <p style="font-size: 18px">
+                  AWS Community Day events are community-led conferences where
+                  event logistics and content is planned, sourced, and delivered
+                  by community leaders. AWS Community Day Singapore is organized
+                  by AWS User Group Singapore.
+                </p>
+              </div>
+            </div>
+            <!-- col end-->
+          </div>
+          <!-- row end-->
+          <!-- <div class="row wow animate__animated animate__fadeInRight animated">
+            <div class="col-lg-4 text-center">
+              <div class="single-intro-text">
+                <i class="fa fa-microphone"></i>
+                <h3 class="ts-title">Presentations</h3>
+                <p>Details Will Be Updated Soon</p>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="single-intro-text">
+                <i class="fa fa-gift"></i>
+                <h3 class="ts-title">Gifts</h3>
+                <p>Details Will Be Updated Soon</p>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="single-intro-text">
+                <i class="fa fa-slack fa-3x"></i>
+                <h3 class="ts-title">Conversations</h3>
+                <p>Details Will Be Updated Soon</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- row end-->
+        </div>
+        <!-- container end-->
+      </section>
+      <!-- ts intro end-->
+
+      <!-- ts speaker start-->
+      <section id="ts-speakers" class="ts-speakers">
+        <div class="container">
+          <div class="row wow animate__animated animate__zoomIn animated">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="section-title white text-center">
+                <span>Listen to the</span>
+                Event Speakers
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/mohamed-wali.jpeg"
+                    alt=""
+                  />
+                  <a
+                    href="https://twitter.com/_mwaly?lang=en"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Mohamed Wali</h3>
+                  <p>Solutions Architect at <b> Amazon Web Services </b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/ranga-karanam.png"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/rangakaranam/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Ranga Karanam</h3>
+                  <p>Founder at <b> in28Minutes </b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/cristian-southall.png"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/cristiansouthall/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">
+                    Cristian Southall
+                  </h3>
+                  <p>CTO at <b> Journey One</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/sonu-kim.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://linkedin.com/in/sonu-kim-1677b7227/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Sonu Kim</h3>
+                  <p>COO at<b> Serverless Operations, Inc. (Japan) </b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/steve-ng.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/sng08/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Steve Ng</h3>
+                  <p>Developer Relations Lead at <b> New Relic, Inc. </b></p>
+                </div>
+              </div>
+            </div>
+
+
+           
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img class="img-fluid" src="images/speakers/michael_cheng.jpg" alt="" />
+                  <a
+                    href="https://www.linkedin.com/in/miccheng/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Michael Cheng</h3>
+                  <p>
+                    Lead Engineer at <b> GovTech Singapore</b>
+                    <br>
+                    Founder - Engineers.sg, Singapore PHP User Group
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img class="img-fluid" src="images/team/steve.jpeg" alt="" />
+                  <a
+                    href="https://www.linkedin.com/in/steveteo/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Steve Teo</h3>
+                  <p>
+                    Director of Cloud Security Engineering at <b> <br>Horangi Cyber Security</b>
+                    <br>
+                    AWS User Group Leader , AWS Community Hero
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/donnie.jpeg"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/donnieprakoso/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Donnie Prakoso</h3>
+                  <p>
+                    Principal Developer Advocate at <b>Amazon Web Services</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+            class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+            data-wow-duration="1.5s"
+            data-wow-delay="400ms"
+          >
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img
+                  class="img-fluid"
+                  src="images/speakers/max.jpeg"
+                  alt=""
+                />
+                <a
+                  href=" https://www.linkedin.com/in/maxongzb/"
+                  class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in"
+                  target="_blank"
+                >
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">
+                  Max Ong Zong Bao
+                </h3>
+                <p>Founder at <b> Upskillcycle</b> <br>
+                  Vice President, Python User Group Singapore
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div
+            class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+            data-wow-duration="1.5s"
+            data-wow-delay="400ms"
+          >
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img
+                  class="img-fluid"
+                  src="images/speakers/lyxann.jpeg"
+                  alt=""
+                />
+                <a
+                  href="https://www.linkedin.com/in/lyxann/"
+                  class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in"
+                  target="_blank"
+                >
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">
+                  Ann Yuxin Luo
+                </h3>
+                <p>Founder at <b> CodingGirls</b> <br>
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+            data-wow-duration="1.5s"
+            data-wow-delay="400ms"
+          >
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img
+                  class="img-fluid"
+                  src="images/speakers/kor.jpeg"
+                  alt=""
+                />
+                <a
+                  href="https://www.linkedin.com/in/saloni-kaur"
+                  class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in"
+                  target="_blank"
+                >
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">
+                  Saloni Kaur
+                </h3>
+                <p>Product Engineer at <b> Wise</b> <br>
+                Director at Women Who Code</p>
+              </div>
+            </div>
+          </div>
+           
+          
+            
+            <div
+            class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+            data-wow-duration="1.5s"
+            data-wow-delay="400ms"
+          >
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img
+                  class="img-fluid"
+                  src="images/speakers/boominathan-sangapillai.JPG"
+                  alt=""
+                />
+                <a
+                  href="https://www.linkedin.com/in/cloudboomi/"
+                  class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in"
+                  target="_blank"
+                >
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">
+                  Boominathan Sangapillai
+                </h3>
+                <p>APAC Regional Multi-Cloud Architect at <b> Cisco</b></p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/ashok-kalakoti.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/ashok-kalakoti/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">
+                    Ashok Kalakoti
+                  </h3>
+                  <p> Cloud Architect <b> </b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img class="img-fluid" src="images/team/badri.jpeg" alt="" />
+                  <a
+                    href="https://sg.linkedin.com/in/badri-kesavan"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Badri Kesavan</h3>
+                  <p>AWS User Group Leader<b></b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img class="img-fluid" src="images/team/paul.png" alt="" />
+                  <a
+                    href="https://www.linkedin.com/in/peeweeh/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Paul Hidalgo</h3>
+                  <p>Head of Cloud Business (ASEAN) at <b>Trend Micro</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/chen-yang-lho.jfif"
+                    alt=""
+                  />
+                  <a
+                    href="https://linkedin.com/in/lcplcy"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">Chen Yang Lho</h3>
+                  <p>
+                    Business Intelligence Engineer at
+                    <b> Amazon Web Services</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/chathra-serasinghe.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://linkedin.com/in/chathraserasinghe/"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">
+                    Chathra Serasinghe
+                  </h3>
+                  <p>Senior Engineer at <b> Versent</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms"
+            >
+              <div class="ts-speaker white-text">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/hrittikhere.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://www.linkedin.com/in/hrittikhere"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                    target="_blank"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title" style="color: #ffffff">
+                    Hrittik Roy
+                  </h3>
+                  <p> GitHub Campus Expert <b> </b></p>
+                </div>
+              </div>
+            </div>
+
+            
+  <div
+  class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
+  data-wow-duration="1.5s"
+  data-wow-delay="400ms"
+>
+  <div class="ts-speaker white-text">
+    <div class="speaker-img">
+      <img
+        class="img-fluid"
+        src="images/speakers/yongkang-he.png"
+        alt=""
+      />
+      <a
+        href="https://www.linkedin.com/in/yongkanghe/"
+        class="view-speaker ts-image-popup"
+        data-effect="mfp-zoom-in"
+        target="_blank"
+      >
+        <i class="icon icon-plus"></i>
+      </a>
+    </div>
+    <div class="ts-speaker-info">
+      <h3 class="ts-title" style="color: #ffffff">Yongkang He</h3>
+      <p>
+        CloudCasa Global Ambassador at <b> @K8SUG.com
+        </b>
+      </p>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        <!-- shap img-->
+        <div class="speaker-shap">
+          <img
+            class="shap1"
+            src="images/shap/home_speaker_memphis1.png"
+            alt=""
+          />
+          <img
+            class="shap2"
+            src="images/shap/home_speaker_memphis2.png"
+            alt=""
+          />
+        </div>
+        <!-- shap img end-->
+      </section>
+      <!-- ts speaker end -->
+
+      <!-- ts experience start-->
+      <section id="schedules" class="ts-schedule ts-schedule-white">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="section-title white">
+            Event Schedule
+          </h2>
+        </div>
+        <div class="scheduleContainer">
+         
+          <div class="time start-900">9:00</div>
+          <!-- <div class="time start-930">9:30</div>
+          <div class="time start-955">9:55</div> -->
+          <div class="time start-1000">10:00</div>
+          <!-- <div class="time start-1015">10:15</div>
+          <div class="time start-1025">10:25</div> -->
+          <div class="time start-1030" style="font-size: 16px;
+          color: white;">10:30</div>
+          <!-- <div class="time start-1100">11:00</div> -->
+          <!-- <div class="time start-1110">11:10</div> -->
+          <div class="time start-1120">11:20</div>
+          <div class="time start-1150">11:50</div>
+          <div class="time start-1300">13:00</div>
+          <div class="time start-1340">13:40</div>
+          <!-- <div class="time start-1400">14:00</div> -->
+          <!-- <div class="time start-1410">14:10</div> -->
+          <div class="time start-1420">14:20</div>
+          <!-- <div class="time start-1445">14:45</div>
+          <div class="time start-1450">14:50</div> -->
+          <div class="time start-1500">15:00</div>
+          <!-- <div class="time start-1530">15:30</div> -->
+          <div class="time start-1540">15:40</div>
+          <!-- <div class="time start-1600">16:00</div>
+          <div class="time start-1610">16:10</div> -->
+          <div class="time start-1620">16:20</div>
+          <div class="time start-1710">17:10</div>
+
+        
+          <div class="event stage-lunch start-900 end-955 length-4">
+            Arrival and registration <span>
+              at Level 8 Foyer
+            </span>
+          </div>
+          <div class="event stage-earth start-1000 end-1029 length-4">
+            Community Day Opening Address <span>by Joel Garcia (Head of Technology ASEAN, AWS) & Steve Teo</span>
+            <span> at Level 7 Stephen Riady Auditorium </span> 
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_03" class="event stage-earth start-1030 end-1110 length-4">
+            Recap of Top re:Invent 2022 Announcements <span>by Donnie Prakoso & Steve Teo </span>
+             <span> at Level 7 Stephen Riady Auditorium </span>
+          </div>
+          <div class="modal fade" id="modal_03" role="dialog">
+            <div class="modal-dialog"  >
+              <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                <div class="modal-header">
+                  <div>
+                  <h4 class="ts-title"  >Recap of Top re:Invent 2022 Announcements</h4>
+
+                  <h6 style="margin-bottom: 1%;">Time : 10:30 AM - 11:10 AM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                </div>
+                </div>
+                <br>
+               <h4 style="margin-left: 5%;">Overview</h4>
+                <div class="modal-body">
+                  <p style="margin-left: 5%;" >Donnie and Steve will recap in detail on the Top re:Invent 2022 announcements that every developer, sysop and architect should know and care about.</p>
+                </div>
+        
+                <br>
+              <div>
+               <h4 style="margin-left: 5%;">Speaker(s)</h4>
+               <p style="margin-left: 7%;">
+                Steve Teo & Donnie Prakoso
+               <br>
+              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div  data-toggle="modal" style="cursor: pointer" data-target="#modal_04" class="event stage-mercury start-1120 end-1149 length-2">
+            The Evolution of Serverless: Past, Present and Future<span
+              >by Ranga Karanam</span
+            >
+            <div class="modal fade" id="modal_04" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >The Evolution of Serverless: Past, Present and Future</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 11:20 AM - 12:00 PM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >Serverless computing got its start with functions-as-a-service (FaaS) offerings, such as Amazon Lambda, which allow users to run code in response to specific events, such as a request to an API or the uploading of a file to a storage service. These FaaS offerings made it easy for developers to build and deploy code without having to worry about the underlying infrastructure.
+                    </br>
+                  </br>
+                      Over time, serverless offerings have expanded to include database-as-a-service (DBaaS) options, such as Amazon DynamoDB, which allow users to easily create and manage a NoSQL database without the need to worry about the underlying infrastructure.
+                    </br>
+                  </br>
+                      Serverless computing has also overlapped with container-based technologies, such as Kubernetes, which allow users to deploy and manage containerized applications in the cloud. This overlap has led to the development of hybrid serverless architectures, which combine the benefits of both serverless and container-based technologies.
+                    </br>
+                  </br>
+                      While the hype around serverless computing may have died down in recent years, usage of serverless technologies is still on the rise, with over 50% of cloud customers using serverless technologies. As the technology continues to evolve, it is likely that serverless computing will continue to play a significant role in cloud computing.
+                    </br>
+                  </br>
+                      Join us to learn more about the past, present, and future of serverless computing.</p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Ranga Karanam
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+             <span> at Level 7 Stephen Riady Auditorium </span> 
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_05" class="event stage-venus start-1120 end-1149 length-2">
+            Simplify your application network connectivity with the latest networking launches from re:Invent
+            <span>by Boominathan Sangapillai</span>
+
+            <div class="modal fade" id="modal_05" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Simplify your application network connectivity with the latest networking launches from re:Invent</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 11:20 PM - 12:00 PM <br> Location : Level 9 Room 903 Seminar Room </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >
+                      The latest announcements and use cases from AWS's re:invent 2022 network service offerings.This session will provide an overview of the new service and walk through the process of defining and applying policies for network access, traffic management, and monitoring for applications irrespective of the type of computing environment. 
+                      The presentation will provide information on the latest AWS service that delivers consistent methods for connecting, securing, and monitoring communications between your services. 
+                      Discover how Amazon simplifies and enhances the connectivity of modern applications.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Boominathan Sangapillai
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+             <span> at Level 9 Room 903 Seminar Room </span> 
+          </div>
+
+          <div class="event stage-lunch start-1150 end-1259 length-4">
+            Lunch <span></span> 
+           <span> at Level 7 Mezzanine</span>
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_06" class="event stage-mercury start-1300 end-1330 length-1">
+            Maximizing Business Value through Cost Optimization with the Well-Architected Framework
+             <span>by Mohamed Wali</span> 
+
+             <div class="modal fade" id="modal_06" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Maximizing Business Value through Cost Optimization with the Well-Architected Framework</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 13:00 PM - 13:30 PM <br> Location : Level 7 Stephen Riady Auditorium  </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >
+                      Companies need to build quickly, and keep their costs under control. They need to make sure that every dollar that flows out is being turned into value for the business, and they need to maximise that value.
+                      By following the Well-Architected Framework’s Cost Optimization pillar, they can ensure they have the guard rails in place to move forward with confidence and focus on building their business, without having to look over their shoulder constantly in case an unexpected bill crops up.
+                    
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Mohamed Wali
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <span> at Level 7 Stephen Riady Auditorium </span>
+          </div>
+          <div  data-toggle="modal" style="cursor: pointer" data-target="#modal_07"  class="event stage-venus start-1300 end-1330 length-1">
+            Fireside Chat with Community Leaders in Singapore<span
+              >by Steve Teo , Michael Cheng , Max Ong Zong Bao & Saloni Kaur
+            </span>
+            <div class="modal fade" id="modal_07" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Fireside Chat with Community Leaders in Singapore</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 13:00 PM - 13:30 PM <br> Location : Level 9 Room 903 ( Seminar Room )  </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > This fireside chat will be exciting and have prominent tech community leaders in Singapore discussing how community work have impacted their lives and those of the tech communities that they serve. Attendees will also get a chance to learn more from this leaders about their respective tech communities, and how they can get started in tech community work.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Steve Teo <br> Michael Cheng <br> Max Ong Zong Bao <br> Saloni Kaur
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+             <span> at Level 9 Room 903 ( Seminar Room ) </span>
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_08"  class="event stage-jupiter start-1300 end-1450 length-2">
+            Securing Your Amazon EKS Cluster with Falco
+             <span>by Yongkang He</span>
+            
+            <div class="modal fade" id="modal_08" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Securing Your Amazon EKS Cluster with Falco</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 13:00 PM - 14:45 PM <br> Location : Level 9 Room 901 </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > In this hands-on based workshop, you will learn how to use Falco to secure your Containers on EKS Cluster. Falco, the cloud-native runtime security project, is the de facto Kubernetes threat detection engine. 
+                      You will also learn how to launch an EKS Cluster in about 20 minutes via automation followed by how to deploy your containerized application into the EKS Cluster.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Yongkang He
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+             <span> at Level 9 Room 901 </span>
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_18" class="event stage-mercury start-1340 end-1410 length-1">
+            Simplifying design complexities using Serverless Architecture on AWS <span>by Sonu Kim</span>
+             <span> at Level 7 Stephen Riady Auditorium</span> 
+
+            <div class="modal fade" id="modal_18" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Simplifying design complexities using Serverless Architecture on AWS</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 13:40 PM - 14:10 PM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > One of the major pain points of serverless is complexity. 
+                      Design patterns recommended in the serverless context include "microservices" and "event-driven architecture. 
+                      While both are excellent designs for modern application development, they can increase overall complexity as workloads grow, reduce monitoring and transparency, and lead to a poor developer experience.
+                      This session will introduce architectural patterns that tend to be complex and show how to improve them smartly with the latest services presented at re:Invent 2022.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Sonu Kim
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_09" class="event stage-venus start-1340 end-1410 length-1">
+            Automating the deployment of software agents centrally using AWS Systems Manager<span
+              >by Chathra Serasinghe
+            </span>
+            <div class="modal fade" id="modal_09" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Automating the deployment of software agents centrally using AWS Systems Manager</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 13:40 PM - 14:10 PM <br> Location : Level 9 Room 903 ( Seminar Room )</h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > It is common for enterprises to give a high priority on security and compliance, as these are critical concerns for businesses of all sizes. 
+                      One way that enterprises can address these concerns is by leveraging agent-based security and compliance tools.
+                      <br>
+                      This session explains about the solution which helps to centrally deploy agents to all SSM managed workloads that enable a variety of use cases, such as endpoint security, threat intelligence, software asset management, inventory, license management, etc.
+                      <br>
+                      <br>
+                      It also discusses best practices to follow and contains a quick demonstration of this solution.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Chathra Serasinghe
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 9 Room 903 ( Seminar Room ) </span>
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_10"  class="event stage-mercury start-1420 end-1450 length-1">
+            Treating your AWS Pain Points <span>by Cristian Southall</span>
+
+            <div class="modal fade" id="modal_10" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Treating your AWS Pain Points</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 14:20 PM - 14:50 PM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > As AWS users we often experience friction when developing or operating our workloads. 
+                      Some of this is healthy, some is infuriating. In this session we adopt a series of AWS user personas and explore a range of pain points and possible responses to them.
+                       Should we accept the friction? Can we work around it?
+                       or should we lean into our role as customers and drive AWS to improve their product?
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Cristian Southall
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 7 Stephen Riady Auditorium</span>
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_11"  class="event stage-venus start-1420 end-1450 length-1">
+            AWS Cloud Automation Platform with Terraform and Jenkins<span>by Ashok Kalakoti</span>
+
+            <div class="modal fade" id="modal_11" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >AWS Cloud Automation Platform with Terraform and Jenkin</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 14:20 PM - 14:50 PM <br> Location : Level 9 Room 903 ( Seminar Room ) </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > Fully automated workflow to provision the AWS cloud Infrastructure using an open source tools like Jenkins as Orchestrator and the Terraform tool to use CICD pipelines based on the GitOps operating model.
+
+                      Which this approach, provision of cloud resources are more secure and effective way of controlling the Terraform modules release.
+                      
+                      This solution also extends the self help or self service approach for developers to use pre-defined and secured modules to submit the infrastructure provisioning via git merg/PR.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Ashok Kalakoti
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 9 Room 903 ( Seminar Room ) </span>
+          </div>
+
+          
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_13" class="event stage-mercury start-1500 end-1530 length-1">
+            How New Relic Unlocked Scalability with Cell-based Architecture on AWS <span>by Steve Ng</span>
+
+            <div class="modal fade" id="modal_13" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >How New Relic Unlocked Scalability with Cell-based Architecture on AWS</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 15:00 PM - 15:30 PM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > New Relic started a journey to migrate its entire telemetry data platform to AWS to accommodate explosive growth. In under a year, New Relic used its own Observability Platform combined with AWS services to migrate 20,000+ servers to AWS.
+                       In this session, we talk about how New Relic used a cell-based architecture to pave the way for long-term scalability and geographic expansion.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Steve Ng
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 7 Stephen Riady Auditorium</span>
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_14" class="event stage-venus start-1500 end-1530 length-1">
+            Unifying Your Security Data with Amazon Security Lake and OCSF<span>by Paul Hidalgo</span>
+             <div class="modal fade" id="modal_14" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Unifying Your Security Data with Amazon Security Lake and OCSF</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 15:00 PM - 15:30 PM <br> Location : Level 9 Room 903 ( Seminar Room ) </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >Learn about Amazon Security Lake, a centralized data lake for storing and analyzing security data from various sources. Security Lake has adopted the Open Cybersecurity Schema Framework (OCSF), allowing it to normalize and combine data from AWS and a range of other sources.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Paul Hidalgo
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 9 Room 903 ( Seminar Room ) </span>
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_12" class="event stage-jupiter start-1500 end-1610 length-2">
+            Use EC2 as your personal computer ft. VSCode<span>by Hrittik Roy </span> 
+            <div class="modal fade" id="modal_12" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Use EC2 as your personal computer ft. VSCode</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 15:00 PM - 16:10 PM <br> Location : Level 9 Room 901 </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" > Let’s get on a hands-on session where you would experience creating a virtual machine from scratch. Now, we would start by diving down the AWS console and then we would go on to create a Linux VM on EC2 with help of asymmetric encryption and then connect it with the loved VSCode.
+
+                      By the end, you would be able to run your workloads directly on EC2 via VSCode and use it for development purposes
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Hrittik Roy
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+             <span> at Level 9 Room 901</span> 
+          </div>
+
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_15" class="event stage-mercury start-1540 end-1610 length-1">
+            Building an Enterprise Grade Multi Account AWS Environment
+            <span>by Badri Kesavan</span>
+
+            <div class="modal fade" id="modal_15" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Building an Enterprise Grade Multi Account AWS Environment</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 15:40 PM - 16:10 PM <br> Location : Level 7 Stephen Riady Auditorium </h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >A solid foundation must be built around AWS accounts, Networking, Security, Logs, Monitoring, etc to host a production grade cloud hosted application and to ultimately make it operational. 
+                    </br>
+                      In the context of an enterprise AWS environment one will be creating tens and hundreds of AWS accounts to host the Cloud hosted applications. To manage that level of AWS accounts at scale a solid multi account management foundation must be put in place to ultimately run a production grade AWS application. The solid foundation includes creating a proper design for your multi account strategy and management solution to manage your multi AWS accounts, Identity and access management for managing the user access across multi AWS accounts, Managing network connectivity for your multi AWS accounts, Establishing security tooling for managing the multi AWS account vulnerability assessment & threat detection, Centralised logging solution for your multi AWS accounts, Performing backup and disaster recovery for your multi AWS accounts & Managing deployments for your multi AWS accounts. 
+                    </br>
+                      In this talk, You will learn some practical implementation approach to establish solid multi account foundation to create an enterprise grade AWS environment.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Badri Kesavan
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span> at Level 7 Stephen Riady Auditorium</span>
+          </div>
+          <div data-toggle="modal" style="cursor: pointer" data-target="#modal_16" class="event stage-venus start-1540 end-1610 length-1">
+            Building Trust in Your Data - Improving Your Data Quality with Automated Framework on AWS<span>by Chen Yang Lho</span>
+
+
+          <span> at Level 9 Room 903 ( Seminar Room ) </span>
+
+            <div class="modal fade" id="modal_16" role="dialog">
+              <div class="modal-dialog"  >
+                <div class="modal-content" style="width: 105%;background-color: #202d3c">
+                  <div class="modal-header">
+                    <div>
+                    <h4 class="ts-title"  >Building Trust in Your Data - Improving Your Data Quality with Automated Framework on AWS</h4>
+  
+                    <h6 style="margin-bottom: 1%;">Time : 15:40 PM - 16:10 PM <br> Location : Level 9 Room 903 ( Seminar Room )</h6>
+                  </div>
+                  </div>
+                  <br>
+                 <h4 style="margin-left: 5%;">Overview</h4>
+                  <div class="modal-body">
+                    <p style="margin-left: 5%;" >
+                      Join us as we walk through our automated data quality framework built on top of AWS services, and learn how you can adapt it.
+                    </p>
+                  </div>
+          
+                  <br>
+                <div>
+                 <h4 style="margin-left: 5%;">Speaker(s)</h4>
+                 <p style="margin-left: 7%;">
+                  Chen Yang Lho
+                 <br>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="event stage-mars start-1400 end-1610 length-1">
+            AWS JAM <span></span> 
+             <span> L8 Breakout Rooms </span> 
+          </div> -->
+
+          <div class="event stage-earth start-1620 end-1700 length-4">
+            Kahoot Quiz Prizes / Lucky Draw / Closing Address / Photograph
+            <span></span>
+              <span> at Level 7 Stephen Riady Auditorium </span>
+          </div>
+
+          <div class="event stage-earth start-1710 end-1710 length-4">
+            END
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <!-- ts experience end -->
+
+      <!-- sponsors client logo start-->
+      <section id="sponsors" class="ts-sponsors sponsors-border">
+        <div class="container">
+          <div class="wow animate__animated animate__fadeInUp">
+            <div class="col-lg-12 mx-auto">
+              <h2 class="section-title white" style="margin-top: 110px">
+                <span></span>
+                ORGANIZERS
+              </h2>
+            </div>
+            <div class="row sponsors-wrap" style="border: 0">
+              <div class="col-md">
+                <a href="https://www.meetup.com/aws-sg/" class="sponsors-logo" target="_blank">
+                  <img
+                    class="img-fluid"
+                    src="images/AWS_UG_SG_Logo.png"
+                    alt=""
+                    width="220"
+                  />
+                </a>
+              </div>
+              <!-- col end-->
+            </div>
+            <div class="row sponsors-wrap">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white"
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 30px;
+                  "
+                >
+                  SUPPORTERS
+                </h3>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-4">
+                <a
+                  href="https://aws.amazon.com"
+                  class="sponsors-logo"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/aws-logo.jpeg"
+                    alt="AWS"
+                    width="200"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-4">
+                <a
+                  href="https://engineers.sg"
+                  class="sponsors-logo"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/engsg.png"
+                    alt="Engineers.sg"
+                    width="200"
+                  />
+                </a>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row sponsors-wrap">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white"
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 30px;
+                  "
+                >
+                  PARTNERS
+                </h3>
+              </div>
+              <div class="col-md-12">
+                <a
+                  href="https://www.ttab.org.sg/"
+                  class="sponsors-logo"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/ttab.png"
+                    alt="AWS"
+                    width="200"
+                  />
+                </a>
+              </div>
+            </div>
+            
+            <div class="row sponsors-wrap">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white"
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 15px;
+                  "
+                >
+                MAIN SPONSOR
+                </h3>
+              </div>
+              <div class="col-lg-12">
+              <p
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                  "
+              ></p>
+            </div>
+              <div class="col-md">
+                <a
+                  href="https://www.trendmicro.com/en_sg/forHome.html"
+                  class="sponsors-logo"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/Trend-Micro-Logo.jpg"
+                    alt="AWS"
+                    width="200"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row sponsors-wrap">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white"
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 15px;
+                  "
+                >
+                CO-SPONSOR
+              </div>
+              <div class="col-lg-12">
+              <p
+                  style="
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                  "
+              ></p>
+            </div>
+              <div class="col-md">
+                <a
+                  href="https://aiven.io"
+                  class="sponsors-logo"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/aiven_logo.png"
+                    alt="AWS"
+                    width="200"
+                  />
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="row" style="padding-bottom: 25px">
+            <div class="col-lg-12">
+              <h3
+                class="section-title white wow animated animate__animated animate__fadeInLeft"
+                style="text-align: center; color: #ffffff; margin-bottom: 30px"
+              >
+                ORGANIZING TEAM
+              </h3>
+            </div>
+            <div class="container">
+              <div class="row" style="margin-left: 10%;">
+
+              
+
+                <div
+                  class="col-sm-6 col-xs-12 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/steveteo/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/steve.jpeg"
+                      alt="Steve Teo"
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">Steve Teo</div>
+                  <div style="margin-top: 20px; font-size: 14px">
+                    User Group Leader <br>
+                    AWS Community Hero
+                  </div>
+                </div>
+                <!-- col end-->
+                <div
+                  class="col-sm-6 col-xs-12 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/badri-kesavan"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/badri.jpeg"
+                      alt="Badri Kesavan"
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Badri Kesavan
+                  </div>
+                  <div style="margin-top: 20px; font-size: 14px">
+                    User Group Leader <br>
+                    AWS Community Builder
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-xs-12 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  <a href="https://www.linkedin.com/in/imalka/" target="_blank">
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/pamu.jpeg"
+                      alt="Pamuditha Imalka"
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Pamuditha Imalka
+                  </div>
+                  <div style="margin-top: 20px; font-size: 14px">User Group Leader</div>
+                </div>
+                
+                
+
+                <div
+                  class="col-sm-6 col-xs-12 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                  <a
+                    href="https://www.linkedin.com/in/isuruab/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/isuru.jpeg"
+                      alt="Isuru"
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Isuru Abeywardana
+                  </div>
+                  <div style="margin-top: 20px; font-size: 14px"> That Community Guy</div>
+                </div>
+
+                <div
+                  class="col-sm-6 col-xs-12 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                  <a
+                    href="https://www.linkedin.com/in/lynteoh/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/lyn.jpeg"
+                      alt=""
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Lyn Teoh
+                  </div>
+                  <div style="margin-top: 20px; font-size: 14px"> That Marketing Girl </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+            <div class="col-lg-12">
+              <h3
+                class="section-title white wow animated animate__animated animate__fadeInLeft"
+                style="text-align: center; color: #ffffff; margin-bottom: 30px"
+              >
+              </h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/carla.jpg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">Carla Abanes</div>
+                </div>
+              
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/yongkang-he.png"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Yongkang He
+                  </div>
+                </div>
+                
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center"
+              >
+                
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/lahiri.jpeg"
+                    alt=""
+                    width="225"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">Lahiru Ratnayaka</div>
+              </div>
+
+
+                
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+               
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/Nazeer.jpeg"
+                      alt="Pamuditha Imalka"
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Nazeer Bin Basir
+                  </div>
+                </div>
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/charan.jpg"
+                      alt="Pamuditha Imalka"
+                      width="255"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Chathra Serasinghe
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+            <div class="col-lg-12">
+              <h3
+                class="section-title white wow animated animate__animated animate__fadeInLeft"
+                style="text-align: center; color: #ffffff; margin-bottom: 30px"
+              >
+
+              </h3>
+            </div>
+            <div class="container">
+              <div class="row">
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+                
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/Quy.jpeg"
+                    alt="Pamuditha Imalka"
+                    width="255"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Quy Tang
+                </div>
+              </div>
+
+
+                
+                
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/kalx.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Kalyan N
+                  </div>
+                </div>
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/fazir.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Fazir Mohamed 
+                  </div>
+                </div>
+                
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/speakers/boominathan-sangapillai.JPG"
+                      alt=""
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Boominathan Sangapillai
+                  </div>
+                </div>
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+               
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/rajasekhar.jpeg"
+                    alt=""
+                    width="230"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Rajasekhar Lekkala
+                </div>
+              </div>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white wow animated animate__animated animate__fadeInLeft"
+                  style="text-align: center; color: #ffffff; margin-bottom: 30px"
+                >
+  
+                </h3>
+              </div>
+            <div class="container">
+              <div class="row">
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+               
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/Amiyu_Kumudun_Andaraweera.jpg"
+                    alt=""
+                    width="255"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Kumudun Andaraweera
+                </div>
+              </div>
+
+              <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+                
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/tung.jpeg"
+                    alt=""
+                    width="255"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Tung Kah Marn
+                </div>
+              </div>
+
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/devina.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">Devina Nayak</div>
+                </div>
+                
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/melani.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Melani Dayananda
+                  </div>
+                </div>
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                  
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/chiragnayyar.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Chirag Nayyar
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+
+
+            <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white wow animated animate__animated animate__fadeInLeft"
+                  style="text-align: center; color: #ffffff; margin-bottom: 30px"
+                >
+  
+                </h3>
+              </div>
+            <div class="container">
+              <div class="row">
+            
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/aparna.jpeg"
+                      alt=""
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Aparna Gottumukkala
+                  </div>
+                </div>
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/paul.png"
+                      alt=""
+                      width="255"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Paul Hildago
+                  </div>
+                </div>
+
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+               
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/Nishon_Fernando.jpg"
+                    alt=""
+                    width="230"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Nishon Fernando
+                </div>
+              </div>
+
+              <div
+              class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+              style="text-align: center "
+            >
+             
+                <img
+                  class="img-fluid image-border"
+                  src="images/team/Marcus.jpg"
+                  alt=""
+                  width="230"
+                />
+              </a>
+              <div style="margin-top: 20px; font-size: 18px">
+                Marcus
+              </div>
+            </div>
+
+            <div
+            class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+            style="text-align: center "
+          >
+           
+              <img
+                class="img-fluid image-border"
+                src="images/team/Nelushi.jpeg"
+                alt=""
+                width="230"
+              />
+            </a>
+            <div style="margin-top: 20px; font-size: 18px">
+              Nelushi 
+            </div>
+          </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white wow animated animate__animated animate__fadeInLeft"
+                  style="text-align: center; color: #ffffff; margin-bottom: 30px"
+                >
+  
+                </h3>
+              </div>
+            <div class="container">
+              <div class="row">
+            
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/Reiko_Tan.jpg"
+                      alt=""
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Reiko Tan
+                  </div>
+                </div>
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/Shafeek_Ahamed.jpeg"
+                      alt=""
+                      width="255"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Shafeek Ahamed
+                  </div>
+                </div>
+
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+               
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/Daniel_Low.JPG"
+                    alt=""
+                    width="230"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Daniel Low
+                </div>
+              </div>
+
+              <div
+              class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+              style="text-align: center "
+            >
+             
+                <img
+                  class="img-fluid image-border"
+                  src="images/team/Baljeet_Singh.jpg"
+                  alt=""
+                  width="230"
+                />
+              </a>
+              <div style="margin-top: 20px; font-size: 18px">
+                Baljeet Singh
+              </div>
+            </div>
+            <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/speakers/michael_cheng.jpg"
+                      alt=""
+                      width="230"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Michael Cheng (Engineers.SG)
+                  </div>
+                </div>
+
+          
+              </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 25px ; margin-left: 10%">
+              <div class="col-lg-12">
+                <h3
+                  class="section-title white wow animated animate__animated animate__fadeInLeft"
+                  style="text-align: center; color: #ffffff; margin-bottom: 30px"
+                >
+  
+                </h3>
+              </div>
+            <div class="container">
+              <div class="row">
+            
+                
+                <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center "
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/eng-sg-1.png"
+                      alt=""
+                      width="255"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Sreedhar (Engineers.SG)
+                  </div>
+                </div>
+
+
+                <div
+                class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                style="text-align: center "
+              >
+               
+                  <img
+                    class="img-fluid image-border"
+                    src="images/team/eng-sg-2.png"
+                    alt=""
+                    width="230"
+                  />
+                </a>
+                <div style="margin-top: 20px; font-size: 18px">
+                  Michael Yiin (Engineers.SG)
+                </div>
+              </div>
+
+              <div
+                  class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+                  style="text-align: center"
+                >
+                 
+                    <img
+                      class="img-fluid image-border"
+                      src="images/team/Allan.jpeg"
+                      alt=""
+                      width="225"
+                    />
+                  </a>
+                  <div style="margin-top: 20px; font-size: 18px">
+                    Allan Chua (Engineers.SG)
+                  </div>
+                </div>
+              <!-- <div
+              class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+              style="text-align: center "
+            >
+             
+                <img
+                  class="img-fluid image-border"
+                  src="images/team/Baljeet_Singh.jpg"
+                  alt=""
+                  width="230"
+                />
+              </a>
+              <div style="margin-top: 20px; font-size: 18px">
+                Baljeet Singh
+              </div>
+            </div> -->
+
+            <!-- <div
+            class="col-sm-3 col-xs-6 col-md-2 col-lg-2 col-xl-2 wow animated animate__animated animate__fadeInDown"
+            style="text-align: center "
+          >
+           
+              <img
+                class="img-fluid image-border"
+                src="images/team/rajasekhar.jpeg"
+                alt=""
+                width="230"
+              />
+            </a>
+            <div style="margin-top: 20px; font-size: 18px">
+              Rajasekhar Lekkala
+            </div>
+          </div> -->
+              </div>
+              </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- container end-->
+      </section>
+      <!-- sponsors client logo end-->
+
+      <!-- ts footer area start-->
+      <div class="footer-area wow animate__animated animate__fadeInUp">
+        <!-- footer start-->
+        <footer class="ts-footer ts-footer-item">
+          <div class="container">
+            <div class="row footer-border">
+              <div class="col-lg-5"></div>
+              <div class="col-lg-7">
+                <!-- footer social end-->
+                <div class="footer-menu mb-30" style="font-size: 18px">
+                  <ul>
+                    <li><a></a></li>
+                  </ul>
+                </div>
+                <!-- footer menu end-->
+
+                <div class="ts-footer-social">
+                  <ul>
+                    <li>
+                      <a href="https://www.meetup.com/aws-sg/" target="_blank"
+                        ><i class="fa fa-meetup"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://discord.gg/Uf4PAmeuyU" target="_blank"
+                        ><i class="fa"
+                          ><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACRklEQVRIie2VP0hWURjGn3PBJNSGNAnDMRzSwaK2Wqo5qikxswiypSEwsKkmlwrbnGsskIqgsBKtpUiCDHNoiIKizygIMvTzPr+Wox6vnym0+sLLPTzned5/5557pQ37XwM2AzUV8Bpg81r6bJWgreT5NexJwWtJHRVoHYJx7Pfk+XWgrVKsUAi8SfaAQjgluK0suyGpStIB2TslNUZqSVn2QdKopLLsiwrhpOCWsuxCCKFcsR2gDxugF+jEnsBmDX8LdAK9UXupYgdAneCLpNpC3q+CJ8qyN5JKEWuU3a4QDkvaXuD/UghNIYTfxeq7Y0WfsD9ivwS6gKqK7caRAl3Yr6Lmc+yiayXZfhY3z6wWcC0DzsYinxY3arHL2GWgIcH3YE9hjxXwBuwx7Clgd4Jvw57Hnlv2agOHYuaRQlf3Fw8T+hL+5eSQ7xU0o5F/UFq4B/b+qHxR6Ho2Wc+tgqfrpRgLMWPWhzHrkeVcWrCfY98B6hJ8C/bdOLqWguZY7OxBmmAqJujGHsIeBo5qnQYcxx7GHgJOxwSTaYKfESwXLtEIcAKorxC0HuhYnPmSz8fnjzTBXEIYA85jTxeE09jvon8v7JWAnjjOBWxWWjhkGEyK2ydpq0JoVQg9kh5L+iOpQdKu6PURe6QQzimEtojtTVocTNZk5PlV7Jmkgm/k+QDQBGRAM9AevTliO8jzm9ilRDdDnl8BVn6pgSbyvD+OAexxoPofh1uNPR65E+R5P9C0+uuwXFy7nh9K/CEVP5Abtn77CyIC1uL4NdbIAAAAAElFTkSuQmCC"
+                        /></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@awsusergroupsingapore8794"
+                        target="_blank"
+                        ><i class="fa fa-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/aws-user-group-singapore"
+                        target="_blank"
+                        ><i class="fa"
+                          ><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABi0lEQVRIid2Vv05UQRSHv0OUrDYqsoUFKn8q38FQGZ+ATl6BxCz2PISJWFj4p7LQloQOCnpeACgFVEh2A2vhZ3G5m/F6l73DWvGr5tyZ+X1zTs7MheuiaLJIvQUsAg+Be8BP4ADYioizsU6gLqif1J716qkf1fmrAl6pv4aYV9VXV3MBbxuaV7Wek8E46owCLPh3iTbVO+pyBqSvzqW+ExXOGnAzib9FxCmw16gMhSYvfAYatLBFmx4Dtyub9oAHQCsD1APa/7S3+rwm9bVkXvVzEq+obfWu+rpm77NybVquRxknBXgH/I6IE6ADHFbmH9dB7mdCNoAdgIjoA7uV+elycCP5+D0TMp8aUTw1qY7KQZrJQSZklAZ+KWSLoiv+h7rAdhkMyhURZ+pX4EWy+Im6lMQzSdwCJpJ4Jln3JSLOa/HqrHqecbuH3fjLX2V1dUzIy1G1LEHrVwS8aQRIQJ2L1Juo3ziDGtCc+kHtDjHvqu/V2ct8mv7jW8BTiqdiCvgB7APbQ7voWuoP3oG9oAzPxCoAAAAASUVORK5CYII=" /></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:aws.usergroup.singapore@gmail.com"
+                        target="_blank"
+                        ><i class="fa fa-email"
+                          ><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACDklEQVRIie2UP2hUQRDGv7nb3WedQgQbC7VJZ2FAOBHliI3aWIikEmJhaZFUiahNBO20CyIERJAU6RQrq0QRESQEsZGgEMQ/iRByNzPvPgtf5Hi+M5qkEfPBwr43s/Pb+QYW2NF/KVnfuPt5kvcAxG2om5O8mFK6CwCh1WrtDyH0hxDuu/sqyQcAdm0B0BKRczHGGXc/4+7zNRHJSE6r6oUQwgyAkwC+bRKwCuB0CGGmcOahiGS1IlgXkUkzuxxjfEryBIBPfwn4CqAZY3yiqpdITqGwvtaVJABumdlESulFp9M5CuD9HwKWOp3OsRjjrJmNisid7tq1igOj7n47pfTG3RsA3v6uOsl3eZ43UkqvzewmgIlfktrtdr+ZsbxUdYpkILnHzF5V5ZjZPMm9JOvuPlmV0263+6s6+eGdyClVPSAiSyGE4wDmSilzIYSGiHxQ1YMkz/aq1QuyQnIwy7IFdx8CoCGEJoDHRfxR8a3uPpRl2QLJQQArldUq7FpW1QEAMLOx4t8syT6SUtgjJPvMbLaIjwGAqg6Y2XLZrjKkCrA+o0VVHTazI6o6rKqLpctVgsqQbsBIj0FvtMYL0CEz+1we/ArJwZTSMzMbAXCj1xA30FUzG08pvSTZBPAFAGRtbW1fvV7fnVJ6XrR8bZOAbo3HGK+r6uE8zz/+fIW32EGVrsQYt+PCO/pX9R0mgwy0EHw2cgAAAABJRU5ErkJggg==" /></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- col end-->
+              <div class="col-lg-4" style="font-size: 18px">
+                <div class="copyright-text text-right"></div>
+              </div>
+            </div>
+            <!-- row end-->
+          </div>
+          <!-- container end-->
+        </footer>
+        <!-- footer end-->
+        <div class="BackTo">
+          <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+        </div>
+      </div>
+      <!-- ts footer area end-->
+
+      <!-- Javascript Files
+      ================================================== -->
+      <!-- initialize jQuery Library -->
+      <script src="js/jquery.js"></script>
+
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap jQuery -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Counter -->
+      <script src="js/jquery.appear.min.js"></script>
+      <!-- Countdown -->
+      <script src="js/jquery.jCounter.js"></script>
+      <!-- magnific-popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- carousel -->
+      <script src="js/owl.carousel.min.js"></script>
+
+      <!-- isotop -->
+      <script src="js/isotope.pkgd.min.js"></script>
+
+      <!-- embed2 -->
+      <script src="js/embed2.js"></script>
+      <script src="js/jquery.jCounter.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <!-- Template custom -->
+      <script src="js/main.js"></script>
+    </div>
+    <!-- Body inner end -->
+  </body>
+</html>
