@@ -1,1 +1,1 @@
-# AWS Community Day New Zealand
+# AWS Community Day Aotearoa
