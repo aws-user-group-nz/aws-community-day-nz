@@ -26,13 +26,13 @@
     var settings = {
       animation: null,
       callback: null,
-      customDuration: null,
+      customDuration: 9923582,
       customRange: null,
       date: null,
       debugLog: false,
       serverDateSource: "dateandtime.php", //path to dateandtime.php file (i.e. http://my-domain.com/dateandtime.php)
       format: "dd:hh:mm:ss",
-      timezone: "Europe/London",
+      timezone: "Pacific/Auckland",
       twoDigits: "on",
     };
 
