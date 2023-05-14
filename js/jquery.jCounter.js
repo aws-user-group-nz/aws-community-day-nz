@@ -28,7 +28,7 @@
       callback: null,
       customDuration: null,
       customRange: null,
-      date: "01 january 2024 12:00:00",
+      date: null,
       debugLog: false,
       serverDateSource: "dateandtime.php", //path to dateandtime.php file (i.e. http://my-domain.com/dateandtime.php)
       format: "dd:hh:mm:ss",
