@@ -52,7 +52,7 @@ jQuery(function ($) {
 
   if ($(".countdown").length > 0) {
     $(".countdown").jCounter({
-      date: "28 January 2023 09:00:00",
+      date: "06 September 2023 09:00:00",
       fallback: function () {
         console.log("count finished!");
       },
