@@ -435,6 +435,10 @@ img.pull-right {
   color: #fff;
 }
 
+.section-title.gold, .column-title.gold {
+  color: #facc14;
+}
+
 .section-title.white:after,
 .column-title.white:after {
   background-image: url(../images/shap/title-white.png);
@@ -4367,4 +4371,172 @@ faq-item
 
 .mfp-iframe-holder .mfp-content .mfp-iframe-scaler {
   height: 90%;
+}
+
+
+/*------------ banners added by Hrishi -------------*/
+
+/*-------------- bronze banner ------*/
+.banner-bronze {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #CD7F32;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #61380e;
+  background: #CD7F32;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+              0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner-bronze::before,
+.banner-bronze::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -49px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #CD7F32;
+  border-right: 20px solid #CD7F32;
+  border-bottom-color: #CD7F32;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner-bronze::after {
+  left: auto;
+  right: -49px;
+  border-left: 20px solid #CD7F32;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+/*-------------- silver banner ------*/
+.banner-silver {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #C0C0C0;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #807777;
+  background: #C0C0C0;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+              0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner-silver::before,
+.banner-silver::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -49px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #C0C0C0;
+  border-right: 20px solid #C0C0C0;
+  border-bottom-color: #C0C0C0;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner-silver::after {
+  left: auto;
+  right: -49px;
+  border-left: 20px solid #C0C0C0;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+/*-------------- gold banner ------*/
+.banner-gold {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #FFC300;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #9e7b08;
+  background: #FFC300;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+              0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner-gold::before,
+.banner-gold::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -49px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #FFC300;
+  border-right: 20px solid #FFC300;
+  border-bottom-color: #FFC300;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner-gold::after {
+  left: auto;
+  right: -49px;
+  border-left: 20px solid #FFC300;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+/*-------------- friends banner ------*/
+.banner-friends {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #9b2;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #627912;
+  background: #9b2;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+              0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner-friends::before,
+.banner-friends::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -49px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #9b2;
+  border-right: 20px solid #9b2;
+  border-bottom-color: #9b2;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner-friends::after {
+  left: auto;
+  right: -49px;
+  border-left: 20px solid #9b2;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
 }
