@@ -51,11 +51,14 @@ jQuery(function ($) {
    /* -----------------------------------------------------------*/
 
   if ($(".countdown").length > 0) {
-    $(".countdown").jCounter({
-      date: "18 September 2025 09:00:00",
-      fallback: function () {
-        console.log("count finished!");
-      },
+    $(".countdown").each(function() {
+      var date = $(this).data('date');
+      $(this).jCounter({
+        date: date,
+        fallback: function () {
+          console.log("count finished!");
+        },
+      });
     });
   }
 
