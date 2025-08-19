@@ -58,14 +58,13 @@
 
     <link rel="stylesheet" href="css/animate.css" />
     
-
     <style>
       body {
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        padding: 4rem 0;
+        padding: 4rem 2rem;
         font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       }
 
@@ -75,6 +74,7 @@
         grid-template-columns: 5rem repeat(4, 1fr);
         grid-template-rows: repeat(28, 1fr);
         grid-template-areas: "time800 stage stage stage stage" "time830 stage stage stage stage" "time900 stage stage stage stage" "time930 stage stage stage stage" "time955 stage stage stage stage" "time1000 stage stage stage stage" "time1015 stage stage stage stage" "time1025 stage stage stage stage" "time1029 stage stage stage stage" "time1030 stage stage stage stage" "time1100 stage stage stage stage" "time1110 stage stage stage stage" "time1120 stage stage stage stage" "time1130 stage stage stage stage"  "time1149 stage stage stage stage" "time1150 stage stage stage stage" "time1200 stage stage stage stage" "time1230 stage stage stage stage" "time1259 stage stage stage stage" "time1300 stage stage stage stage" "time1330 stage stage stage stage" "time1340 stage stage stage stage" "time1400 stage stage stage stage" "time1410 stage stage stage stage" "time1420 stage stage stage stage" "time1430 stage stage stage stage" "time1445 stage stage stage stage" "time1450 stage stage stage stage" "time1500 stage stage stage stage" "time1530 stage stage stage stage" "time1540 stage stage stage stage" "time1600 stage stage stage stage" "time1610 stage stage stage stage" "time1620 stage stage stage stage" "time1630 stage stage stage stage" "time1700 stage stage stage stage" "time1710 stage stage stage stage";
+        max-width: 90%;
       }
 
       /**
@@ -456,6 +456,13 @@
       .event.stage-bk{
         background-color: #232F3E;
       }
+      
+      /* Ensure Sessionize footer is visible */
+      [class*="sessionize"], [id*="sessionize"], .sessionize-footer, .sessionize-credit {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -520,9 +527,9 @@
                 <li class="nav-item nav-link">
                   <a class="ts-scroll" href="#speakers">Speakers</a>
                 </li>
-<!--                <li class="nav-item nav-link">-->
-<!--                  <a class="ts-scroll" href="#schedules">Schedules</a>-->
-<!--                </li>-->
+                <li class="nav-item nav-link">
+                  <a class="ts-scroll" href="#schedules">Schedules</a>
+                </li>
                 <li class="nav-item nav-link">
                   <a class="ts-scroll" href="#sponsors">SPONSORS</a>
                 </li>
@@ -534,13 +541,10 @@
                     Conduct
                   </a>
                 </li>
-                <li class="nav-item nav-link">
+                <!-- <li class="nav-item nav-link">
                   <a href="https://awsug.nz/code-of-conduct" target="_blank">
                     Privacy
                   </a>
-                </li>
-                <!-- <li class="nav-item nav-link">
-                  <a href="https://awsug.nz/code-of-conduct" target="_blank" > Privacy Notice </a>
                 </li> -->
                 <li class="nav-item nav-link">
                   <a
@@ -764,9 +768,19 @@
 
       <!-- Schedules container start -->
       <!-- ts experience start-->
-<!--      <section id="schedules">-->
-<!--        <script type="text/javascript" src="https://sessionize.com/api/v2/ekhxszsv/view/GridSmart"></script>-->
-<!--      </section>-->
+      <section id="schedules" class="ts-schedules">
+        <div class="container">
+          <div class="row wow animate__animated animate__zoomIn animated">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="section-title white text-center">
+                <span>Event</span>
+                Schedule
+              </h2>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://sessionize.com/api/v2/j5jg0hdc/view/GridSmart"></script>
+      </section>
       <!-- ts experience end -->
       <!-- Schedules container end -->
 
@@ -784,41 +798,438 @@
           </div>
 
          <div class="row">
-           <div
-             class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated"
-             data-wow-duration="1.5s"
-             data-wow-delay="400ms"
-           >
-             <!-- <div class="ts-speaker white-text">
-               <div class="speaker-img">
-                 <img
-                   class="img-fluid"
-                   src="images/speakers/russell_hall.jpeg"
-                   alt=""
-                  />
-                 <a
-                   href="https://www.linkedin.com/in/russell-hall-501791/"
-                   class="view-speaker ts-image-popup"
-                   data-effect="mfp-zoom-in"
-                   target="_blank"
-                 >
-                   <i class="icon icon-plus"></i>
-                  </a>
-                </div>
-                <div class="ts-speaker-info">
-                  <h3 class="ts-title" style="color: #ffffff">Russell Hall (Keynote Speaker)</h3>
-                  <p>ANZ Country Lead @ Amazon Kuiper Services</p>
-                </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/russell_hall.png" alt="" />
+                <a href="https://www.linkedin.com/in/russell-hall-501791/" class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in" target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
               </div>
-            </div> -->
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Russell Hall</h3>
+                <p>ANZ Country Lead @<br>Amazon Kuiper Commercial Services</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/donnie_prakoso.png" alt="" />
+                <a href="https://www.linkedin.com/in/donnieprakoso/" class="view-speaker ts-image-popup"
+                  data-effect="mfp-zoom-in" target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Donnie Prakoso</h3>
+                <p>Principal Developer Advocate @<br> AWS Web Services</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/michael_walmsley.png" alt="" />
+                <a href="https://www.linkedin.com/in/walmsles/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Michael Walmsley</h3>
+                <p>AWS Solution Architect<br>(Serverless Specialist) @<br>Accenture<br>AWS Serverless Hero</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/renaldi_gondosubroto.png" alt="" />
+                <a href="https://www.linkedin.com/in/renaldigondosubroto/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Renaldi Gondosubroto</h3>
+                <p>Director @<br>Cloudetica Solutions<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/michael_jarry.png" alt="" />
+                <a href="https://www.linkedin.com/in/kiwimike/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Michael Jarry</h3>
+                <p>Technical Specialist - Cloud @<br>Inde Technology</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/sagar_donthineni.png" alt="" />
+                <a href="https://www.linkedin.com/in/donthinenis/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Sagar Donthineni</h3>
+                <p>Senior AWS Architect @<br>Deloitte<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/kasun_de_silva.png" alt="" />
+                <a href="https://www.linkedin.com/in/kasundsilva/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Kasun de Silva</h3>
+                <p>Senior Engineer @<br>Xero<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/michael_gealogo.png" alt="" />
+                <a href="https://www.linkedin.com/in/michael-gealogo/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Michael Gealogo</h3>
+                <p>Software Engineer @<br>Xero</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/matthew_gillard.png" alt="" />
+                <a href="https://www.linkedin.com/in/mattgillard/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Matthew Gillard</h3>
+                <p>Chief Technology Officer@<br>CuidadoConnect<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/roberto_allende.png" alt="" />
+                <a href="https://www.linkedin.com/in/robertoallende/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Roberto Allende</h3>
+                <p>Team Lead @<br>MetService<br>AWS & GenAI Hackathoner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/bryce_cummock.png" alt="" />
+                <a href="https://www.linkedin.com/in/bryce-c-675994/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Bryce Cummock</h3>
+                <p>AWS Cloud Architect and AWS Enthusiast</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/cecilia_yin.png" alt="" />
+                <a href="https://www.linkedin.com/in/cecilia-yin/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Cecilia Yin</h3>
+                <p>Solutions Architect @<br>AWS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/lingling_cui.png" alt="" />
+                <a href="https://www.linkedin.com/in/lingling-cui-ba18b658/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Lingling Cui</h3>
+                <p>Technical Account Manager @<br>AWS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/stefan_evans.png" alt="" />
+                <a href="https://www.linkedin.com/in/stefanevansnz/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Stefan Evans</h3>
+                <p>DevOps @<br>CyberCX<br>AWS Ambassador</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/ji_molloy.png" alt="" />
+                <a href="https://www.linkedin.com/in/jiyeonmolloy/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Ji Molloy</h3>
+                <p>Senior Engineer - Infrastructure @<br>Xero</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/bo_tu.png" alt="" />
+                <a href="https://www.linkedin.com/in/bo-tu-b6b3202/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Bo Tu</h3>
+                <p>Senior Engineer from Platform @<br>Xero</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/kobe_xu.png" alt="" />
+                <a href="https://www.linkedin.com/in/kobe-xu/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Kobe Xu</h3>
+                <p>Cloud Solutions Architect @<br>Deloitte<br>AWS Community Builder<br>AWS Cloud Club NZ Lead</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/ben_yu.png" alt="" />
+                <a href="https://www.linkedin.com/in/ybbest/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Ben Yu</h3>
+                <p>Enterprise Architect @<br>LottoNZ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/john_ajera.png" alt="" />
+                <a href="https://www.linkedin.com/in/john-ajera/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">John Ajera</h3>
+                <p>Platform Engineer @<br>Earth Sciences New Zealand</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/chamila_de_alwis.png" alt="" />
+                <a href="https://www.linkedin.com/in/chamilad/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Chamila de Alwis</h3>
+                <p>AWS Senior Clound Architect @<br>Leaven<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/natalia_nam.png" alt="" />
+                <a href="https://www.linkedin.com/in/natalia-nam/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Natalia Nam</h3>
+                <p>AWS DevOps Engineer @<br>Snapper Services<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/terence_white.png" alt="" />
+                <a href="https://www.linkedin.com/in/terencewhite/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Terence White</h3>
+                <p>Cloud Engineering Practice Lead @<br>Clearpoint<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/carlo_columna.png" alt="" />
+                <a href="https://www.linkedin.com/in/carlo-columna/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Carlo Columna</h3>
+                <p>Senior Engineer @<br>Xero<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/chiwai_chan.png" alt="" />
+                <a href="https://www.linkedin.com/in/chiwaichan/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Chiwai Chan</h3>
+                <p>Tinkerer. Principal Consultant @<br>Datacom<br>AWS Community Builder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 animate__fadeIn wow animated animate__animated" data-wow-duration="1.5s"
+            data-wow-delay="400ms">
+            <div class="ts-speaker white-text">
+              <div class="speaker-img">
+                <img class="img-fluid" src="images/speakers/dipin_thomas.png" alt="" />
+                <a href="https://www.linkedin.com/in/dipin-thomas/" class="view-speaker ts-image-popup" data-effect="mfp-zoom-in"
+                  target="_blank">
+                  <i class="icon icon-plus"></i>
+                </a>
+              </div>
+              <div class="ts-speaker-info">
+                <h3 class="ts-title" style="color: #ffffff">Dipin Thomas</h3>
+                <p>Lead Engineer @ <br>Xero</p>
+              </div>
+            </div>
+          </div>
 
          </div>
        </div>
        <!-- &lt;!&ndash; shap img&ndash;&gt; &lt;!&ndash; ##Commented -->
-       <div class="speaker-shap">
+       <!-- <div class="speaker-shap">
          <img class="shap1" src="images/shap/home_speaker_memphis1.png" alt=""/>
          <img class="shap2" src="images/shap/home_speaker_memphis2.png" alt=""/>
-        </div>
+        </div> -->
         <!-- shap img end -->
       </section>
 
@@ -986,9 +1397,9 @@
                <a href="https://mantelgroup.com.au/" class="sponsors-logo" target="_blank">
                  <img
                    class="img-fluid"
-                   src="images/sponsors/MG_Logo_Negative.png"
+                   src="images/sponsors/Mantel Logo - Negative@2x.png"
                    alt=""
-                   width="150"
+                   width="200"
                  />
                </a>                
 
@@ -1351,7 +1762,7 @@
       >
         <img
           class="img-fluid image-border"
-          src="images/team/john_ajera.jpg"
+          src="images/team/john_ajera.png"
           alt="John Ajera"
           width="230"
         />
@@ -1415,7 +1826,7 @@
       >
         <img
           class="img-fluid image-border"
-          src="images/team/mark_goatley.jpeg"
+          src="images/team/mark_goatley.png"
           alt="Mark Goatley"
           width="230"
         />
