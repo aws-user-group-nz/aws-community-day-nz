@@ -22,6 +22,17 @@
   
 */
 
+/* =====================
+   CONFIGURATION SWITCHES
+   ===================== */
+// Set to false to disable auto-redirect functionality
+// Change this value to control the redirect behavior
+const AUTO_REDIRECT_ENABLED = true;
+
+// Set the destination page for auto-redirect
+// Examples: 'inperson.html', 'virtual.html', 'about.html', etc.
+const AUTO_REDIRECT_DESTINATION = 'inperson.html';
+
 jQuery(function ($) {
   /**-------------------------------------------------
    *Fixed HEader
@@ -312,4 +323,48 @@ jQuery(function ($) {
       return false;
     });
   }
+
+  /* ----------------------------------------------------------- */
+  /*  Auto-redirect functionality for index.html
+   /* ----------------------------------------------------------- */
+  
+  // Function to set intentional navigation flag
+  window.setIntentionalNavigation = function() {
+    sessionStorage.setItem('intentionalNavigation', 'true');
+  };
 });
+
+// Auto-redirect logic for index.html - runs immediately when script loads
+(function() {
+  // Check if auto-redirect is enabled
+  if (!AUTO_REDIRECT_ENABLED) {
+    return; // Exit early if disabled
+  }
+  
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+    // Check if user came from another page in our site
+    const referrer = document.referrer;
+    const currentDomain = window.location.hostname;
+    const referrerDomain = referrer ? new URL(referrer).hostname : null;
+    
+    // Check if referrer is from the same domain and contains .html (internal page)
+    const isInternalNavigation = referrer && 
+      referrerDomain === currentDomain && 
+      referrer.includes('.html');
+    
+    // Check if we have a session flag indicating intentional navigation
+    const intentionalNavigation = sessionStorage.getItem('intentionalNavigation');
+    
+    // Only redirect if:
+    // 1. User didn't come from our internal pages
+    // 2. User didn't intentionally navigate here
+    // 3. This is the first time loading the page in this session
+    if (!isInternalNavigation && !intentionalNavigation && !sessionStorage.getItem('redirected')) {
+      // Set a flag to prevent infinite redirects
+      sessionStorage.setItem('redirected', 'true');
+      
+      // Redirect to the configured destination
+      window.location.href = AUTO_REDIRECT_DESTINATION;
+    }
+  }
+})();
